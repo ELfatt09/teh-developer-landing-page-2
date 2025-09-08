@@ -1,19 +1,22 @@
 import { useState } from 'react'
 import Navbar from './partials/navbar'
-import { Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 
 import Portofolio from './page/Portofolio'
+import Hero from ''
 
 function App() {
 
   return (
-    <>
+    <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={<Hero />} />
-        <Route path='/portofolio' element={<Portofolio />} />
+        <Route path="/portofolio" element={<Portofolio />} />
+
       </Routes>
-    </>
+
+    </Router>
   )
 }
 
