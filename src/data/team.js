@@ -3,6 +3,11 @@ import Zahir from "../assets/foto-jas/zahir.svg";
 import Sevalino from "../assets/foto-jas/sevalino.svg";
 import Ibnu from "../assets/foto-jas/ibnu.svg";
 
+import FarzanMenu from "../assets/foto-jas/menu/farzan.svg";
+import ZahirMenu from "../assets/foto-jas/menu/zahir-menu.svg";
+import SevalinoMenu from "../assets/foto-jas/menu/sevalino.svg";
+import IbnuMenu from "../assets/foto-jas/menu/ibnu.svg";
+
 export const team = [
     {
         id: 1,
@@ -12,6 +17,7 @@ export const team = [
         about: "Learn about myself here",
         mail: "sevalino@gmail.com",
         photo: Sevalino,
+        menuPhoto: SevalinoMenu,
     },
     {
         id: 2,
@@ -21,6 +27,7 @@ export const team = [
         about: "Learn about myself here",
         mail: "ibnuformal@gmail.com",
         photo: Ibnu,
+        menuPhoto: IbnuMenu,
     },
     {
         id: 3,
@@ -30,6 +37,7 @@ export const team = [
         about: "Learn about myself here",
         mail: "zahir@gmail.com",
         photo: Zahir,
+        menuPhoto: ZahirMenu,
     },
     {
         id: 4,
@@ -39,5 +47,6 @@ export const team = [
         about: "Learn about myself here",
         mail: "farzan@gmail.com",
         photo: Farzan,
+        menuPhoto: FarzanMenu,
     },
 ]
