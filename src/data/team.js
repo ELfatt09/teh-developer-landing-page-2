@@ -3,6 +3,11 @@ import Zahir from "../assets/foto-jas/zahir.svg";
 import Sevalino from "../assets/foto-jas/sevalino.svg";
 import Ibnu from "../assets/foto-jas/ibnu.svg";
 
+import FarzanMenu from "../assets/foto-jas/farzan.svg";
+import ZahirMenu from "../assets/foto-jas/zahir.svg";
+import SevalinoMenu from "../assets/foto-jas/sevalino.svg";
+import IbnuMenu from "../assets/foto-jas/ibnu.svg";
+
 export const team = [
     {
         id: 1,
@@ -16,7 +21,7 @@ export const team = [
     {
         id: 2,
         name: "Ibnu Alif Muhadzdzib",
-        role: "Co Founder Teh Developer & Fullstack Developer",
+        role: "Co-Founder Teh Developer & Fullstack Developer",
         quotes: "Saya menciptakan solusi teknis yang kuat dan cepat. hingga peluncuran, saya memastikan website dan aplikasi berjalan lancar tanpa bug",
         about: "Learn about myself here",
         mail: "ibnuformal@gmail.com",
