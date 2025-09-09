@@ -1,5 +1,5 @@
 import { team } from "../data/team";
-import { useState, React } from "react";
+import React, { useState } from "react";
 
 export default function ProjectPortofolio() {
     const [selected, setSelected] = useState(team[0]);

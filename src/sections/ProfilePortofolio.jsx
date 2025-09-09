@@ -22,6 +22,7 @@ const fadeInUp = {
   }),
 }
 
+
 export default function ProfilePortofolio() {
      const [selected, setSelected] = useState(team[0]);
          const hoverAnim = {
@@ -33,6 +34,11 @@ export default function ProfilePortofolio() {
         rest: { opacity: 0, x: -15 },
         hover: { opacity: 1, x: 0, transition: { duration: 0.3, ease: "easeOut" } },
       };
+
+      const combined = {
+  ...fadeInUp,
+  ...hoverAnim,
+};
 
     return(
          <motion.section
@@ -49,7 +55,7 @@ export default function ProfilePortofolio() {
           <motion.h1 variants={fadeInUp}>It's Me</motion.h1>
         </motion.div>
 
-        <div className="flex gap-8">
+        <div className="flex gap-8" variants={fadeInUp}>
       {/* About Me */}
       <motion.a
         href="#portfolio"
@@ -64,7 +70,7 @@ export default function ProfilePortofolio() {
           </motion.span>
           <motion.h1
             className="font-bold text-xl"
-            variants={hoverAnim}
+            variants={combined}
           >
             About Me
           </motion.h1>
@@ -79,6 +85,7 @@ export default function ProfilePortofolio() {
         initial="rest"
         whileHover="hover"
         animate="rest"
+        variants={fadeInUp}
       >
         <div className="flex items-center gap-2">
           <motion.span variants={arrowAnim}>
