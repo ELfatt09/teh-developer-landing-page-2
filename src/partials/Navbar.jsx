@@ -15,7 +15,7 @@ function Navbar() {
     <motion.nav
       layout
       animate={{ width: scroll ? "80%" : "100%", borderRadius: scroll ? "1rem" : "none", transition: { duration: 0.5, ease: "easeInOut" } }}
-      className={`sticky flex ${scroll ? "bg-white/50 top-5 " : "bg-white top-0"} backdrop-blur-lg items-center justify-between shadow-lg py-3 px-20 mx-auto`}>
+      className={`sticky flex ${scroll ? "bg-white/80 top-5 " : "bg-white top-0"} backdrop-blur-lg items-center justify-between shadow-lg py-3 px-20 mx-auto`}>
       <img src={bannerLogo} alt="The Developer's Hangout Logo" className="h-12" />
       <div className="space-x-8 flex flex-row w-full justify-end">
         <NavbarLinkButton href="#home" >Beranda</NavbarLinkButton>

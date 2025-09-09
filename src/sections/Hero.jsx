@@ -16,7 +16,7 @@ return (
                 <p className="text-xl text-gray-600">
                     Dapatkan website profesional, Aplikasi web dan bantuan IT untuk usaha Anda tanpa perlu coding atau desain rumit. Mudah, cepat, dan terjangkau.
                 </p>
-                <Link to="/contact" className="w-fit px-7 py-3 bg-primary text-white rounded-lg font-semibold text-xl hover:scale-110 hover:shadow-xl shadow-none  transition-all duration-500">Layanan Kami</Link>
+                <Link to="/contact" className="w-fit px-7 py-3 bg-secondary text-white rounded-lg font-semibold text-xl hover:scale-110 hover:shadow-xl hover:bg-primary shadow-none  transition-all duration-500">Layanan Kami</Link>
             </div>
             <div className="w-2/5 h-full px-20 flex flex-col justify-center items-center">
                 <img src='https://placehold.co/400x600' className='w-2/3 h-auto' />
