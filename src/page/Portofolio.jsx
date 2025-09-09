@@ -3,9 +3,11 @@ import { motion } from "motion/react"
 import Ibnu from "../assets/foto-jas/ibnu.svg";
 
 import { team } from "../data/team";
+import { useParams } from "react-router-dom";
 
-export default function Portofolio({id}) {
-    const [selected, setSelected] = useState(team[0]);
+export default function Portofolio() {
+    const { slug } = useParams()
+    const [selected, setSelected] = useState(team.find((item) => item.slug === slug));
 
     return (
         <section className="w-full">

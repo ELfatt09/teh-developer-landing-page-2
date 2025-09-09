@@ -12,6 +12,7 @@ export const team = [
     {
         id: 1,
         name: "Sevalino Elfata",
+        slug: "sevalino-elfata",
         role: "Founder Teh Developer & Fullstack Developer",
         quotes: "Saya menciptakan solusi teknis yang kuat dan cepat. Dari ide hingga peluncuran, saya memastikan website dan aplikasi berjalan lancar tanpa bug",
         about: "Learn about myself here",
@@ -21,6 +22,7 @@ export const team = [
     {
         id: 2,
         name: "Ibnu Alif Muhadzdzib",
+        slug: "ibnu-alif-muhadzdzib",
         role: "Co-Founder Teh Developer & Fullstack Developer",
         quotes: "Saya menciptakan solusi teknis yang kuat dan cepat. hingga peluncuran, saya memastikan website dan aplikasi berjalan lancar tanpa bug",
         about: "Learn about myself here",
@@ -30,6 +32,7 @@ export const team = [
     {
         id: 3,
         name: "Muhammad Zahir As-sajjad",
+        slug: "muhammad-zahir-as-sajjad",
         role: "Marketing & UI UX Designer of Teh Developer",
         quotes: "Saya solusi teknis yang kuat dan cepat. Dari ide hingga peluncuran, saya memastikan website dan aplikasi berjalan lancar tanpa bug",
         about: "Learn about myself here",
@@ -39,6 +42,7 @@ export const team = [
     {
         id: 4,
         name: "Abidal Farzan Rosyidi",
+        slug: "abidal-farzan-rosyidi",
         role: "UI UX Designer & Marketing of Teh Developer",
         quotes: "Saya menciptakan solusi yang kuat dan cepat. Dari ide hingga peluncuran, saya memastikan website dan aplikasi berjalan lancar tanpa bug",
         about: "Learn about myself here",
