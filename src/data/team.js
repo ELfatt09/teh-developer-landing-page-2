@@ -9,9 +9,14 @@ import SevalinoMenu from "../assets/foto-jas/menu/sevalino-menu.svg";
 import IbnuMenu from "../assets/foto-jas/menu/ibnu-menu.svg";
 
 import IbnuCV from "../assets/cv/cv-ibnu.pdf"
+import FarzanCV from "../assets/cv/cv-farzan.pdf"
 
 import IbnuProject1 from "../assets/projects/ibnu-project-1.png"
 import IbnuProject2 from "../assets/projects/ibnu-project-2.png"
+import ZahirProject1 from "../assets/projects/zahir-project-1.jpg"
+import ZahirProject2 from "../assets/projects/zahir-project-2.jpg"
+import FarzanProject1 from "../assets/projects/farzan-project-1.jpg"
+import FarzanProject2 from "../assets/projects/farzan-project-2.jpg"
 
 export const team = [
     {
@@ -20,6 +25,9 @@ export const team = [
         role: "Founder Teh Developer & Fullstack Developer",
         quotes: "Saya menciptakan solusi teknis yang kuat dan cepat. Dari ide hingga peluncuran, saya memastikan website dan aplikasi berjalan lancar tanpa bug",
         about: "Learn about myself here",
+         vision1: "Flexibility & Independence",
+        vision2: "Enhance My Soft Skill",
+        vision3: "Building Impactful Digital Solutions",
         mail: "sevalino@gmail.com",
         photo: Sevalino,
         menuPhoto: SevalinoMenu,
@@ -27,11 +35,19 @@ export const team = [
             {
               id: 1,
               picture:IbnuProject1,
+              tag: ["Fullstack", "Laravel", "Solo Project"],
+              name:"TwiiAhh",
+              type:"Social Media Website",
+              description:'Sebuah website social media seperti social media pada umumnya yaitu website yang dia bisa ngescroll, chat, talipun, message, call, dan lain lain',
               link:"Goggle.com"
             },
             {
               id: 2,
               picture:IbnuProject2,
+              tag: ["Fullstack", "Laravel", "Solo Project"],
+              name:"TwiiAhh",
+              type:"Social Media Website",
+              description:'Sebuah website social media seperti social media pada umumnya yaitu website yang dia bisa ngescroll, chat, talipun, message, call, dan lain lain',
               link:"Goggle.com"
             },
         ]
@@ -42,6 +58,9 @@ export const team = [
         role: "Co Founder Teh Developer & Fullstack Developer",
         quotes: "Saya menciptakan solusi teknis yang kuat dan cepat. hingga peluncuran, saya memastikan website dan aplikasi berjalan lancar tanpa bug",
         about: "Learn about myself here",
+         vision1: "Flexibility & Independence",
+        vision2: "Enhance My Soft Skill",
+        vision3: "Building Impactful Digital Solutions",
         mail: "ibnuformal@gmail.com",
         photo: Ibnu,
         menuPhoto: IbnuMenu,
@@ -50,11 +69,19 @@ export const team = [
             {
               id: 1,
               picture:IbnuProject1,
+              tag: ["Fullstack", "Laravel", "Solo Project"],
+              name:"TwiiAhh",
+              type:"Social Media Website",
+              description:'Sebuah website social media seperti social media pada umumnya yaitu website yang dia bisa ngescroll, chat, talipun, message, call, dan lain lain',
               link:"Goggle.com"
             },
             {
               id: 2,
               picture:IbnuProject2,
+              tag: ["Fullstack", "Laravel", "Solo Project"],
+              name:"TwiiAhh",
+              type:"Social Media Website",
+              description:'Sebuah website social media seperti social media pada umumnya yaitu website yang dia bisa ngescroll, chat, talipun, message, call, dan lain lain',
               link:"Goggle.com"
             },
         ]
@@ -65,18 +92,29 @@ export const team = [
         role: "Marketing & UI UX Designer of Teh Developer",
         quotes: "Saya adalah jembatan antara kreativitas dan strategi,  menciptakan pengalaman digital yang tidak hanya indah, tapi juga bermakna. Dari konsep hingga eksekusi, saya memastikan setiap kisah brand hadir dengan jelas, emosional, dan berdampak",
         about: "Learn about myself here",
+         vision1: "Flexibility & Independence",
+        vision2: "Enhance My Soft Skill",
+        vision3: "Building Impactful Digital Solutions",
         mail: "zahir@gmail.com",
         photo: Zahir,
         menuPhoto: ZahirMenu,
          project: [
             {
               id: 1,
-              picture:IbnuProject1,
+              picture:ZahirProject1,
+              tag: ["Fullstack", "Laravel", "Solo Project"],
+              name:"TwiiAhh",
+              type:"Social Media Website",
+              description:'Sebuah website social media seperti social media pada umumnya yaitu website yang dia bisa ngescroll, chat, talipun, message, call, dan lain lain',
               link:"Goggle.com"
             },
             {
               id: 2,
-              picture:IbnuProject2,
+              picture:ZahirProject2,
+              tag: ["Fullstack", "Laravel", "Solo Project"],
+              name:"Kalcer Shop",
+              type:"Social Media Website",
+              description:'Sebuah website social media seperti social media pada umumnya yaitu website yang dia bisa ngescroll, chat, talipun, message, call, dan lain lain',
               link:"Goggle.com"
             },
         ]
@@ -85,20 +123,32 @@ export const team = [
         id: 4,
         name: "Abidal Farzan",
         role: "UI UX Designer & Marketing of Teh Developer",
-        quotes: "Saya menciptakan solusi yang kuat dan cepat. Dari ide hingga peluncuran, saya memastikan website dan aplikasi berjalan lancar tanpa bug",
-        about: "Learn about myself here",
-        mail: "farzan@gmail.com",
+        quotes: "I am Abidal Farzan Rosyidi, a 16–year–old student passionate about exploring the digital world. I am eager to enhance my knowledge in web development, UI/UX, and modern technologies. With curiosity and dedication, I aim to grow my skills and contribute to meaningful digital projects.",
+        about: "Just make it flex",
+        vision1: "Flexibility & Independence",
+        vision2: "Enhance My Soft Skill",
+        vision3: "Building Impactful Digital Solutions",
+        mail: "abidalfarzan02@gmail.com",
         photo: Farzan,
         menuPhoto: FarzanMenu,
+        cv:FarzanCV,
          project: [
             {
               id: 1,
-              picture:IbnuProject1,
+              picture:FarzanProject1,
+              tag: ["Fullstack", "Laravel", "Solo Project"],
+              name:"TwiiAhh",
+              type:"Social Media Website",
+              description:'Sebuah website social media seperti social media pada umumnya yaitu website yang dia bisa ngescroll, chat, talipun, message, call, dan lain lain',
               link:"Goggle.com"
             },
             {
               id: 2,
-              picture:IbnuProject2,
+              picture:FarzanProject2,
+              tag: ["Fullstack", "Laravel", "Solo Project"],
+              name:"TwiiAhh",
+              type:"Social Media Website",
+              description:'Sebuah website social media seperti social media pada umumnya yaitu website yang dia bisa ngescroll, chat, talipun, message, call, dan lain lain',
               link:"Goggle.com"
             },
         ]
