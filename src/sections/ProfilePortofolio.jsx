@@ -57,7 +57,11 @@ export default function ProfilePortofolio() {
 
         <div className="flex gap-8" variants={fadeInUp}>
       {/* About Me */}
-      <motion.a
+      <motion.div
+        variants={fadeInUp}
+        custom={3}
+      >
+         <motion.a
         href="#portfolio"
         className="cursor-pointer"
         initial="rest"
@@ -77,9 +81,14 @@ export default function ProfilePortofolio() {
         </div>
         <p className="w-full ml-6 max-w-[10rem] text-gray-500">{selected.about}</p>
       </motion.a>
+      </motion.div>
 
       {/* Contact Me */}
-      <motion.a
+      <motion.div
+        variants={fadeInUp}
+        custom={5}
+      >
+        <motion.a
         href={`mailto:${selected.mail}`}
         className="cursor-pointer"
         initial="rest"
@@ -100,6 +109,7 @@ export default function ProfilePortofolio() {
         </div>
         <h2 className="w-full ml-6 max-w-[10rem] text-gray-500">{selected.mail}</h2>
       </motion.a>
+      </motion.div>
     </div>
       </div>
 
@@ -170,7 +180,7 @@ export default function ProfilePortofolio() {
               <motion.a
                 download="cv-ibnu.pdf"
                 href={selected.cv}
-                className="flex gap-2 items-center"
+                className="flex gap-2 items-center border-b-2 pb-2"
                 whileHover={{ x: 5 }}
               >
                 Download CV <FaArrowDownLong className="pt-1" />
