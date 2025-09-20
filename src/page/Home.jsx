@@ -4,6 +4,7 @@ import Navbar from '../partials/navbar'
 import AboutUs from '../sections/AboutUs'
 import Team from '../sections/Team'
 import Projects from '../sections/projects'
+import Layanans from '../sections/Layanans'
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <AboutUs />
       <Team />
       <Projects />
+      <Layanans />
       </>
   )
 }
