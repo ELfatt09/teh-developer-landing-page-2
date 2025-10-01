@@ -6,7 +6,7 @@ function Hero() {
 return (
     <div className="w-full py-10 font-jakarta">
         <div className="flex flex-col lg:flex-row w-full h-full justify-center items-start space-y-20">
-            <div className="w-full lg:w-1/2 px-5 md:px-20 flex flex-col justify-center items-center lg:justify-start space-y-6 md:space-y-14">
+            <div className="w-full lg:w-1/2 px-5 md:px-20 flex flex-col justify-center items-center lg:items-start lg:justify-start space-y-6 md:space-y-14">
                 <h1 className="text-4xl text-center lg:text-start md:text-6xl tracking-tight font-bold leading-[1.3] ">
                     Punya Website Kini Sesantai <br />
                     <span className='text-primary'>
