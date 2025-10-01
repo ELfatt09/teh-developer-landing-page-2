@@ -37,8 +37,8 @@ function Team() {
   }
 
   return (
-    <section className='w-full px-30 py-25 justify-start items-center font-jakarta space-y-25'>
-      <h2 className='text-5xl'>
+    <section className='w-full px-5 lg:px-20 py-25 justify-start items-center font-jakarta space-y-25'>
+      <h2 className='text-2xl md:text-5xl'>
         Tim Kecil Yang Penuh Dedikasi, Menciptakan Solusi Digital Dengan{" "}
         <span className='font-bold italic text-primary'>
           Kualitas Tinggi & Sentuhan Hangat
@@ -47,19 +47,18 @@ function Team() {
 
 <div className="relative">
         {/* Tombol kiri */}
-        <button className="btn-prev absolute top-1/2 -left-6 z-20 -translate-y-1/2 bg-primary text-white p-3 rounded-full shadow hover:bg-primary/80 transition">
+        <button className="btn-prev absolute top-1/2 left-7 z-20 -translate-y-1/2 bg-black/70 text-white p-3 rounded-full shadow hover:bg-primary/80 transition">
           <FaChevronLeft size={18}/>
         </button>
 
         {/* Tombol kanan */}
-        <button className="btn-next absolute top-1/2 -right-6 z-20 -translate-y-1/2 bg-primary text-white p-3 rounded-full shadow hover:bg-primary/80 transition">
+        <button className="btn-next absolute top-1/2 right-7 z-20 -translate-y-1/2 bg-black/70 text-white p-3 rounded-full shadow hover:bg-primary/80 transition">
           <FaChevronRight size={18}/>
         </button>
 
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={20}
-          slidesPerView={4}
           loop={true}
           aria-haspopup={true}
           navigation={{
@@ -91,10 +90,10 @@ function Team() {
             </SwiperSlide>
             <SwiperSlide>
               <TeamCard 
-                name={"Sevalino Elfata"} 
-                role={"Founder & Project Manager"} 
+                name={"Gaza Fathya Akhdan"} 
+                role={"Designer & Frontend Developer"} 
                 photo={farzan} 
-                slug={'sevalino-elfata'} 
+                slug={'gaza-fathya-akhdan'} 
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -104,15 +103,7 @@ function Team() {
                 photo={zahir} 
                 slug={'muhammad-zahir'} 
               />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TeamCard 
-                name={"Sevalino Elfata"} 
-                role={"Founder & Project Manager"} 
-                photo={sevalino} 
-                slug={'sevalino-elfata'} 
-              />
-            </SwiperSlide>
+          </SwiperSlide>
         </Swiper>
       </div>
     </section>
@@ -122,7 +113,7 @@ function Team() {
 function TeamCard({ name, role, photo, slug }) {
   return (
     <div
-      className='bg-cover bg-no-repeat bg-center w-full max-w-xs h-[420px] rounded-xl overflow-hidden'
+      className='bg-cover bg-no-repeat bg-center w-full mx-auto max-w-xs h-[420px] rounded-xl overflow-hidden'
       style={{ backgroundImage: `url(${photo})` }}
     >
       <div className="w-full h-full flex flex-col justify-between items-start p-7 text-white bg-[linear-gradient(to_bottom,rgba(0,0,0,0.5)_0%,rgba(0,0,0,0.1)_15%,rgba(0,0,0,0.1)_60%,rgba(0,0,0,0.5)_100%)]">
