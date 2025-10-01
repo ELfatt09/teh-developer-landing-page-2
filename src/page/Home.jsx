@@ -7,6 +7,7 @@ import Projects from '../sections/projects'
 import Services from '../sections/Services'
 import KataClient from '../sections/KataClient'
 import Kontak from '../sections/Kontak'
+import Footer from '../sections/Footer'
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
       <Services />
       <KataClient />
       <Kontak />
+      <Footer />
       </>
   )
 }
