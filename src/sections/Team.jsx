@@ -1,3 +1,4 @@
+import { useRef, useState } from "react"
 import detail from "../assets/svg/detail.svg"
 import sevalino from "../assets/foto-kasual/sevalino.png" 
 import { Link } from 'react-router-dom'
@@ -12,6 +13,26 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
 
 
 function Team() {
+  const scrollRef = useRef(null)
+  const [isGrabbing, setIsGrabbing] = useState(false)
+
+  const onMouseDown = (e) => {
+    setIsGrabbing(true)
+    scrollRef.current.startX = e.pageX - scrollRef.current.offsetLeft
+    scrollRef.current.scrollLeftStart = scrollRef.current.scrollLeft
+  }
+
+  const onMouseLeave = () => setIsGrabbing(false)
+  const onMouseUp = () => setIsGrabbing(false)
+
+  const onMouseMove = (e) => {
+    if (!isGrabbing) return
+    e.preventDefault()
+    const x = e.pageX - scrollRef.current.offsetLeft
+    const walk = (x - scrollRef.current.startX) * 1.2 // kecepatan drag
+    scrollRef.current.scrollLeft = scrollRef.current.scrollLeftStart - walk
+  }
+
   return (
     <section className='w-full px-30 py-25 justify-start items-center font-jakarta space-y-25'>
       <h2 className='text-5xl'>

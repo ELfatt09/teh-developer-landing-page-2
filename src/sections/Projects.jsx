@@ -1,5 +1,6 @@
 import React from 'react'
 import arrow from '../assets/svg/arrow.svg'
+import Project from '../components/project'
 
 function Projects() {
   return (
@@ -8,14 +9,17 @@ function Projects() {
                Tim Teh Developer
           </span>
           </h2>
-          <div className='flex flex-col'>
-              <Project order={'1st'} tags={['Lorem Ipsum', 'Dolor Sit', 'Amet']} title={'lorem ipsum'} image={'https://placehold.co/300x500'} slug={'lorem-ipsum'} link={'https://lorem-ipsum.com'} description={'lorem ipsum dolor sit amet'} directionIsRight={true} />
+          <div className='flex flex-col space-y-9'>
+              <ProjectCard order={'1st'} tags={['Lorem Ipsum', 'Dolor Sit', 'Amet']} title={'lorem ipsum'} image={'https://placehold.co/300x500'} slug={'lorem-ipsum'} type={'random application'} link={'https://lorem-ipsum.com'} description={'lorem ipsum dolor sit amet'} directionIsRight={true} />
+              <ProjectCard order={'2nd'} tags={['Lorem Ipsum', 'Dolor Sit', 'Amet']} title={'lorem ipsum'} image={'https://placehold.co/300x500'} slug={'lorem-ipsum'} type={'random application'} link={'https://lorem-ipsum.com'} description={'lorem ipsum dolor sit amet'} directionIsRight={false} />
+              <ProjectCard order={'3rd'} tags={['Lorem Ipsum', 'Dolor Sit', 'Amet']} title={'lorem ipsum'} image={'https://placehold.co/300x500'} slug={'lorem-ipsum'} type={'random application'} link={'https://lorem-ipsum.com'} description={'lorem ipsum dolor sit amet'} directionIsRight={true} />
+
           </div>
       </section>
   )
 }
 
-function Project({ order, tags, title, image, slug, link, description, directionIsRight }) { 
+function ProjectCard({ order, tags, title, image, slug, link, description, directionIsRight, type }) { 
     return (
         <div className={`flex ${directionIsRight ? 'flex-row' : 'flex-row-reverse'} space-x-7 w-full}`}>
             <div className={`w-fit flex flex-col space-y-3 ${directionIsRight ? 'items-end' : 'items-start'}`}>
@@ -25,19 +29,12 @@ function Project({ order, tags, title, image, slug, link, description, direction
                 </div>
                 <img src={arrow} alt="" className={`h-20 w-auto mx-4 ${directionIsRight ? '' : 'scale-x-[-1]'} '' `} />
             </div>
-            <div className={`bg-stone-800 w-full h-fit p-4 rounded-4xl flex ${directionIsRight ? 'flex-row' : 'flex-row-reverse'} justify-start items-center space-x-14`}>
-                <img src={image} alt="" className="object-cover w-full h-full max-w-[310px] max-h-[440px] overflow-hidden rounded-3xl" />
-                <div className={`flex flex-col space-y-3`}>
-                    <div className='flex flex-row space-x-2'>
-                        {tags.map((tag, index) => (
-                            <p key={index} className=" bg-primary text-white px-4 py-3 text-xl rounded-full font-normal">{tag}</p>
-                        ))}
-                    </div>
-                </div>
+            <div className='w-full'>
+                <Project picture={image} name={title} type={type} description={description} tag={tags} link={link} />
+
             </div>
         </div>
-            )
-            
+    );      
 }
 
 export default Projects
