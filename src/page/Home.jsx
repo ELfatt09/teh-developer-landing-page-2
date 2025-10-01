@@ -5,6 +5,7 @@ import AboutUs from '../sections/AboutUs'
 import Team from '../sections/Team'
 import Projects from '../sections/projects'
 import Services from '../sections/Services'
+import KataClient from '../sections/KataClient'
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <Team />
       <Projects />
       <Services />
+      <KataClient />
       </>
   )
 }
