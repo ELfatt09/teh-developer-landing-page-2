@@ -1,6 +1,9 @@
 import { useRef, useState } from "react"
 import detail from "../assets/svg/detail.svg"
 import sevalino from "../assets/foto-kasual/sevalino.png" 
+import farzan from "../assets/foto-kasual/farzan.png" 
+import ibnu from "../assets/foto-kasual/ibnu.png" 
+import zahir from "../assets/foto-kasual/zahir.png" 
 import { Link } from 'react-router-dom'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -80,26 +83,26 @@ function Team() {
             </SwiperSlide>
             <SwiperSlide>
               <TeamCard 
-                name={"Sevalino Elfata"} 
-                role={"Founder & Project Manager"} 
-                photo={sevalino} 
-                slug={'sevalino-elfata'} 
+                name={"Ibnu Alif Muhadzdzib"} 
+                role={"Co-Founder & Fullstack developer"} 
+                photo={ibnu} 
+                slug={'ibnu-muhadzdzib'} 
               />
             </SwiperSlide>
             <SwiperSlide>
               <TeamCard 
                 name={"Sevalino Elfata"} 
                 role={"Founder & Project Manager"} 
-                photo={sevalino} 
+                photo={farzan} 
                 slug={'sevalino-elfata'} 
               />
             </SwiperSlide>
             <SwiperSlide>
               <TeamCard 
-                name={"Sevalino Elfata"} 
-                role={"Founder & Project Manager"} 
-                photo={sevalino} 
-                slug={'sevalino-elfata'} 
+                name={"Muhammad Zahir"} 
+                role={"UI UX Designer & Marketing"} 
+                photo={zahir} 
+                slug={'muhammad-zahir'} 
               />
             </SwiperSlide>
             <SwiperSlide>
