@@ -4,8 +4,8 @@ import Project from '../components/project'
 
 function Projects() {
   return (
-    <section className='w-full px-30 py-25 justify-start items-center font-jakarta space-y-25'>
-          <h2 className='text-6xl tracking-[-3%]'>Project Terakhir <span className='font-bold italic text-secondary'>
+    <section className='w-full px-5 lg:px-30 py-25 justify-start items-center font-jakarta space-y-15 md:space-y-25'>
+          <h2 className='text-3xl md:text-5xl lg:text-6xl tracking-[-3%]'>Project Terakhir <span className='font-bold italic text-secondary'>
                Tim Teh Developer
           </span>
           </h2>
@@ -21,8 +21,8 @@ function Projects() {
 
 function ProjectCard({ order, tags, title, image, slug, link, description, directionIsRight, type }) { 
     return (
-        <div className={`flex ${directionIsRight ? 'flex-row' : 'flex-row-reverse'} space-x-7 w-full}`}>
-            <div className={`w-fit flex flex-col space-y-3 ${directionIsRight ? 'items-end' : 'items-start'}`}>
+        <div className={`flex ${directionIsRight ? 'flex-row' : 'flex-row-reverse'}  md:space-x-7 w-full}`}>
+            <div className={`w-fit hidden lg:flex flex-col space-y-3 ${directionIsRight ? 'items-end' : 'items-start'}`}>
                 <div className="flex flex-col space-y-0 w-full">
                     <p className='text-3xl italic font-light'>{order}</p>
                     <p className='text-6xl italic font-medium text-secondary'>Project</p>

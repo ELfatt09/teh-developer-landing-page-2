@@ -3,14 +3,14 @@ import textpict from '../assets/tehdevfooter.png'
 
 export default function Footer() {
     return (
-        <section className="w-full px-30 pb-25 justify-start items-center font-jakarta space-y-25">
+        <section className="w-full px-5 lg:px-30 pb-25 justify-start items-center font-jakarta space-y-25">
             <div className="bg-white rounded-xl shadow-xl p-6 space-y-8">
-                <div className="bg-primary w-full text-white rounded-xl flex flex-col justify-center items-center space-y-12 py-20">
-                    <div className="space-y-4">
-                        <div className="text-5xl font-semibold">
+                <div className="bg-primary w-full text-white rounded-xl flex flex-col justify-center items-center space-y-12 py-10 md:py-20">
+                    <div className="space-y-4 flex flex-col justify-center items-center">
+                        <div className="text-center text-3xl md:text-5xl font-semibold">
                     <h1>Siap Punya Website Atau Aplikasi?</h1>
                 </div>
-                <div className="text-2xl font-light w-full max-w-3xl text-center">
+                <div className="text-lg md:text-2xl font-light w-full max-w-3/4 text-center">
                     <p>Banyak bisnis kecil sudah tumbuh dengan solusi digital dari Teh Developer. Yuk, mulai sekarang!</p>
                 </div>
                     </div>
@@ -21,7 +21,7 @@ export default function Footer() {
                 </div>
 
                 <div>
-                    <img src={textpict} alt="" />
+                    <img src={textpict} alt="" className='w-full h-auto' />
                 </div>
 
                 <div className='space-y-4 bg-[#F0F0F0] p-8 rounded-xl shadow-xl'>
@@ -37,7 +37,7 @@ export default function Footer() {
                             </div>
                         </div>
 
-                        <div className='flex justify-between items-center px-18'>
+                        <div className='flex flex-wrap justify-between items-center px-18 gap-8'>
                             <div>
                                 <h1 className='text-xl font-semibold mb-2'>Layanan</h1>
                                 <ul className='space-y-3'>
@@ -99,7 +99,7 @@ export default function Footer() {
                             <h1>&copy;2025 Teh Developer All Right Reserved</h1>
                         </div>
 
-                        <div className='flex gap-4'>
+                        <div className='flex flex-wrap gap-4'>
                             <div>
                                 <a href=""
                                    className='underline cursor-pointer'>

@@ -19,7 +19,7 @@ function Navbar() {
     <motion.nav
       layout
       animate={{ width: scroll ? "80%" : "100%", borderRadius: scroll ? "1rem" : "none", transition: { duration: 0.5, ease: "easeInOut" } }}
-      className={`sticky ${scroll ? "bg-white/80 top-5 " : "bg-white top-0"} backdrop-blur-lg items-center justify-between shadow-lg py-3 px-20 mx-auto z-50 hidden lg:flex`}>
+      className={`fixed ${scroll ? "bg-white/80 top-5 " : "bg-white top-0"} backdrop-blur-lg items-center justify-between shadow-lg py-3 px-20 mx-auto z-50 hidden lg:flex`}>
       <img src={bannerLogo} alt="The Developer's Hangout Logo" className="h-12" />
       <div className="space-x-8 flex flex-row w-full justify-end">
         <NavbarLinkButton href="#home" >Beranda</NavbarLinkButton>
@@ -30,11 +30,12 @@ function Navbar() {
       </div>
       </motion.nav>
       <motion.nav
-      className={`flex flex-col lg:hidden fixed bg-white/80 z-50 backdrop-blur-lg w-full  shadow-lg top-0`}>
+      className={`flex flex-col lg:hidden fixed bg-white/80 z-50 backdrop-blur-lg w-screen  shadow-lg top-0`}>
         <div className='justify-between items-center px-5 py-3 flex flex-row w-full'>
-                  <img src={Logo} alt="The Developer's Hangout Logo" className="h-8 " />
+          <img src={Logo} alt="The Developer's Hangout Logo" className="h-8 md:hidden " />
+          <img src={bannerLogo} alt="The Developer's Hangout Logo" className="h-12 hidden md:block " />
         <button onClick={() => setOpen(!open)}>
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6h18M3 12h18M3 18h18" />
           </svg>
         </button>

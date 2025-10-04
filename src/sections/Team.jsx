@@ -38,7 +38,7 @@ function Team() {
 
   return (
     <section className='w-full px-5 lg:px-20 py-25 justify-start items-center font-jakarta space-y-25'>
-      <h2 className='text-2xl md:text-5xl'>
+      <h2 className='text-2xl md:text-4xl lg:text-5xl'>
         Tim Kecil Yang Penuh Dedikasi, Menciptakan Solusi Digital Dengan{" "}
         <span className='font-bold italic text-primary'>
           Kualitas Tinggi & Sentuhan Hangat

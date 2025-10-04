@@ -58,7 +58,7 @@ function Kontak() {
 };
 
     return (
-        <section className="w-full px-30 pt-25 justify-start items-center font-jakarta space-y-25">
+        <section className="w-full px-5 lg:px-30 pt-25 justify-start items-center font-jakarta space-y-25">
             <div className="w-full flex justify-end">
                 <h1 className="text-primary text-5xl italic">
                     Kontak <span className="text-black not-italic font-semibold">Kami</span>

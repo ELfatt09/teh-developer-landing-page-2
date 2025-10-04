@@ -4,14 +4,14 @@ import { FiArrowRight } from 'react-icons/fi'
 
 function Project({picture, name, type, description, tag, link}) {
   return (
-    <div className="w-full flex justify-start items-center">
+    <div className="w-full flex flex-col md:flex-row justify-start items-center">
                         <motion.div 
-                    className="bg-[#363231] rounded-lg p-4 w-full flex gap-6">
+                    className="bg-[#363231] rounded-lg p-4 w-full flex flex-col md:flex-row gap-6">
                         {/* Gambar */}
                             <img 
                                 src={picture} 
                                 alt=""
-                                className="rounded-lg h-full max-h-[400px] object-cover"
+                                className="rounded-lg h-full w-auto max-h-[300px] object-cover"
                             />
 
                         {/* Desc */}
@@ -21,7 +21,7 @@ function Project({picture, name, type, description, tag, link}) {
                                 {tag?.map((t, i) => (
                                     <div
                                     key={i}
-                                    className="text-white bg-primary px-4 py-2 rounded-full"
+                                    className="text-white text-xs md:text-base bg-primary px-4 py-2 rounded-full"
                                     >
                                     <h1>{t}</h1>
                                     </div>
@@ -29,12 +29,12 @@ function Project({picture, name, type, description, tag, link}) {
                                 </div>
 
                             {/* Title */}
-                            <div className="text-white text-4xl font-semibold px-2">
+                            <div className="text-white text-2xl md:text-4xl font-semibold px-2">
                                 <h1>{name}</h1>
-                                <h2 className='text-3xl text-gray-300'>{type}</h2>
+                                <h2 className='text-xl md:text-3xl text-gray-300'>{type}</h2>
                             </div>
 
-                            <div className="text-white w-full max-w-md text-sm px-2 text-justidy">
+                            <div className="text-xs text-white w-full max-w-md md:text-sm px-2 text-justidy">
                                 <p>{description}</p>
                             </div>
 
