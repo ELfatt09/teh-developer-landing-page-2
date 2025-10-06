@@ -1,5 +1,5 @@
-import bannerLogo from '../assets/banner-logo.svg'
-import Logo from '../assets/Logo.svg'
+import bannerLogo from '../assets/banner-logo.png'
+import Logo from '../assets/logo.png'
 import NavbarLinkButton from '../components/NavbarLinkButton'
 import { motion } from 'motion/react'
 import { useEffect, useState } from 'react'
@@ -19,7 +19,7 @@ function Navbar() {
     <motion.nav
       layout
       animate={{ width: scroll ? "80%" : "100%", borderRadius: scroll ? "1rem" : "none", transition: { duration: 0.5, ease: "easeInOut" } }}
-      className={`fixed ${scroll ? "bg-white/80 top-5 " : "bg-white top-0"} backdrop-blur-lg items-center justify-between shadow-lg py-3 px-20 mx-auto z-50 hidden lg:flex`}>
+      className={`sticky ${scroll ? "bg-white/80 top-5 " : "bg-white top-0"} backdrop-blur-lg items-center justify-between shadow-lg py-3 px-20 mx-auto z-50 hidden lg:flex`}>
       <img src={bannerLogo} alt="The Developer's Hangout Logo" className="h-12" />
       <div className="space-x-8 flex flex-row w-full justify-end">
         <NavbarLinkButton href="#home" >Beranda</NavbarLinkButton>

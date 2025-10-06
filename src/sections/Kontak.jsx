@@ -5,6 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { CgArrowTopRight } from "react-icons/cg";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import SectionWrapper from "../partials/SectionWrapper";
 
 const sosmed = [
   {
@@ -58,14 +59,14 @@ function Kontak() {
 };
 
     return (
-        <section className="w-full px-5 lg:px-30 pt-25 justify-start items-center font-jakarta space-y-25">
-            <div className="w-full flex justify-end">
+        <SectionWrapper>
+<div className="w-full justify-end">
                 <h1 className="text-primary text-5xl italic">
                     Kontak <span className="text-black not-italic font-semibold">Kami</span>
                 </h1>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {sosmed.map((item, index) => (
                 <KontakCard 
                     key={index}
@@ -76,9 +77,9 @@ function Kontak() {
                 />
                 ))}
             </div>
-
-            <div className="grid grid-cols-3">
-                <div className="col-span-2 space-y-8">
+            <div className="w-full flex flex-col lg:flex-row">
+                <div className="w-full max-w-4xl grid grid-cols-3">
+                <div className="col-span-3 space-y-8">
                     <div className="space-y-2">
                         <div className="text-4xl font-bold">
                             <h1>
@@ -160,8 +161,10 @@ function Kontak() {
         draggable
         pauseOnHover
       />
+            </div>
+            
 
-        </section>
+        </SectionWrapper>
     )
 }
 

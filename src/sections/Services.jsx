@@ -1,11 +1,11 @@
-import React from 'react';
+import SectionWrapper from '../partials/SectionWrapper';
 import designicon from './../assets/service-icons/Design.svg';
 import detail from "../assets/svg/detail.svg"
 
 
 function Services() {
   return (
-       <section className='w-full px-5 lg:px-30 py-25 justify-start items-center font-jakarta space-y-25'>
+    <SectionWrapper>
           <div className='w-full flex flex-row justify-between items-center'>
             <h2 className='text-3xl md:text-4xl lg:text-6xl tracking-[-3%] leading-tight max-w-2/3'>Kami Menyediakan
               <br />
@@ -23,7 +23,7 @@ function Services() {
               <ServiceCard title='UI/UX Design' description='Desain website atau aplikasi yang menarik dan memukau pengguna.' icon={designicon} />
               <ServiceCard title='UI/UX Design' description='Desain website atau aplikasi yang menarik dan memukau pengguna.' icon={designicon} />
             </div>
-      </section>
+      </SectionWrapper>
   )
 }
 

@@ -3,7 +3,9 @@
 
 @theme {
   --font-jakarta: 'Plus Jakarta Sans', sans-serif;
-  --color-primary: #27B43E;
-  --color-secondary: #5BD066;
+  /* --color-primary: #27B43E; */
+  --color-primary: #80A867;
+  --color-secondary: #E3FF73;
   --color-tertiary: #616161;
+  --color-text: #414141;
 }

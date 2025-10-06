@@ -4,6 +4,7 @@ import sevalino from "../assets/foto-kasual/sevalino.png"
 import farzan from "../assets/foto-kasual/farzan.png" 
 import ibnu from "../assets/foto-kasual/ibnu.png" 
 import zahir from "../assets/foto-kasual/zahir.png" 
+import SectionWrapper from "../partials/SectionWrapper"
 import { Link } from 'react-router-dom'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -37,7 +38,7 @@ function Team() {
   }
 
   return (
-    <section className='w-full px-5 lg:px-20 py-25 justify-start items-center font-jakarta space-y-25'>
+    <SectionWrapper>
       <h2 className='text-2xl md:text-4xl lg:text-5xl'>
         Tim Kecil Yang Penuh Dedikasi, Menciptakan Solusi Digital Dengan{" "}
         <span className='font-bold italic text-primary'>
@@ -106,7 +107,7 @@ function Team() {
           </SwiperSlide>
         </Swiper>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }
 

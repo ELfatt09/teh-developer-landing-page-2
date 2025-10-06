@@ -1,10 +1,11 @@
 import React from 'react'
 import arrow from '../assets/svg/arrow.svg'
 import Project from '../components/project'
+import SectionWrapper from '../partials/SectionWrapper'
 
 function Projects() {
   return (
-    <section className='w-full px-5 lg:px-30 py-25 justify-start items-center font-jakarta space-y-15 md:space-y-25'>
+    <SectionWrapper>
           <h2 className='text-3xl md:text-5xl lg:text-6xl tracking-[-3%]'>Project Terakhir <span className='font-bold italic text-secondary'>
                Tim Teh Developer
           </span>
@@ -15,7 +16,7 @@ function Projects() {
               <ProjectCard order={'3rd'} tags={['Lorem Ipsum', 'Dolor Sit', 'Amet']} title={'lorem ipsum'} image={'https://placehold.co/300x500'} slug={'lorem-ipsum'} type={'random application'} link={'https://lorem-ipsum.com'} description={'lorem ipsum dolor sit amet'} directionIsRight={true} />
 
           </div>
-      </section>
+      </SectionWrapper>
   )
 }
 

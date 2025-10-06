@@ -1,10 +1,11 @@
 import React from "react"
 import fotodummy from '../assets/foto-kasual/sevalino.png'
+import SectionWrapper from "../partials/SectionWrapper"
 
 function KataKlien() {
     return (
-        <section className="w-full px-5  lg:px-30 py-25 justify-start items-center font-jakarta space-y-15 md:space-y-25">
-            <div>
+        <SectionWrapper>
+<div>
                 <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold'>
                     Apa yang klien kami
                     <span className='ml-2 italic font-medium text-primary'>
@@ -27,7 +28,7 @@ function KataKlien() {
                     about={'Penganngguran kelas atas'}
                 />
             </div>
-        </section>
+        </SectionWrapper>
     )
 }
 

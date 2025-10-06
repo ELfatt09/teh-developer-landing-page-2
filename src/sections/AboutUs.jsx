@@ -1,9 +1,11 @@
 import React from 'react'
 import aboutUs from '../assets/about-us.svg'
+import SectionWrapper from '../partials/SectionWrapper'
 
 function AboutUs() {
 return (
-    <section className='w-full px-5 py-10 md:px-20 md:py-25 flex flex-col lg:flex-row justify-between items-center font-jakarta space-y-15 lg:space-x-15'>
+    <SectionWrapper>
+        <div className='w-full flex flex-col lg:flex-row justify-between items-center space-x-10'>
         <div className='w-full max-w-md'>
             
             <img src={aboutUs} alt='about-us' className='w-full h-auto' />
@@ -33,8 +35,9 @@ return (
                 ))}
             </ul>
 
+            </div>
         </div>
-    </section>
+    </SectionWrapper>
 )
 }
 
