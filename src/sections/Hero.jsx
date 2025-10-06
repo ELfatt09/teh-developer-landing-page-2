@@ -20,7 +20,7 @@ return (
             </div>
             <div className="w-full lg:w-1/2 h-full px-5 md:px-20 flex flex-col  items-end">
             <div className='absolute px-4 py-3 md:px-6 md:py-5 rounded-e-4xl rounded-tl-4xl flex flex-col gap-2  -translate-y-5 translate-x-5 bg-secondary text-white '>
-                <p className='text-sm md:text-xl font-semibold leading-[1.2]'>
+                <p className='text-sm md:text-xl text-text font-semibold leading-[1.2]'>
                         Digitalisasi Bisnis Anda 
                         <br />
                     Dari Sekarang!!

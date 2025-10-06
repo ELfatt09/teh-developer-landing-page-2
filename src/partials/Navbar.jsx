@@ -19,15 +19,16 @@ function Navbar() {
     <motion.nav
       layout
       animate={{ width: scroll ? "80%" : "100%", borderRadius: scroll ? "1rem" : "none", transition: { duration: 0.5, ease: "easeInOut" } }}
-      className={`sticky ${scroll ? "bg-white/80 top-5 " : "bg-white top-0"} backdrop-blur-lg items-center justify-between shadow-lg py-3 px-20 mx-auto z-50 hidden lg:flex`}>
+      className={`sticky ${scroll ? "bg-white/80 top-5 shadow-lg" : "bg-white top-0 shadow-none"} backdrop-blur-lg items-center justify-between  py-3 px-20 mx-auto z-50 hidden lg:flex`}>
       <img src={bannerLogo} alt="The Developer's Hangout Logo" className="h-12" />
-      <div className="space-x-8 flex flex-row w-full justify-end">
+      <div className="space-x-8 flex flex-row w-fit justify-center">
         <NavbarLinkButton href="#home" >Beranda</NavbarLinkButton>
         <NavbarLinkButton href="#features" >Tentang Kami</NavbarLinkButton>
         <NavbarLinkButton href="#pricing" >Layanan</NavbarLinkButton>
         <NavbarLinkButton href="#keunggulan" >Keunggulan</NavbarLinkButton>
-        <NavbarLinkButton href="#contact" >Kontak</NavbarLinkButton>
-      </div>
+        
+        </div>
+        <a href="#contact" className="w-fit px-6 py-2 bg-primary ease-in-out text-white rounded-lg font-semibold text-lg hover:bg-primary/70  shadow-none  transition-all duration-500">Kontak</a>
       </motion.nav>
       <motion.nav
       className={`flex flex-col lg:hidden fixed bg-white/80 z-50 backdrop-blur-lg w-screen  shadow-lg top-0`}>
