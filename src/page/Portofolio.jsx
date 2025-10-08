@@ -8,7 +8,7 @@ export default function Portofolio({id}) {
     return (
         <>
           <ProfilePortofolio />
-          <ProjectPortofolio />
+
           <PortofolioFooter />
         </>
     );

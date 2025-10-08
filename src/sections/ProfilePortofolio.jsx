@@ -47,12 +47,12 @@ export default function ProfilePortofolio() {
       animate="visible"
     >
       {/* Upper */}
-      <div className="flex justify-between px-16 pt-4">
+      <div className="flex flex-wrap gap-5 justify-between px-4 md:px-10 lg:px-16 pt-4">
         <motion.div
-          className="text-2xl h-fit font-medium border-b mb-1"
+          className="text-lg md:text-xl lg:text-2xl h-fit font-medium border-b mb-1"
           variants={fadeInUp}
         >
-          <motion.h1 variants={fadeInUp}>It's Me</motion.h1>
+          <motion.h1 className="w-fit" variants={fadeInUp}>It's Me</motion.h1>
         </motion.div>
 
         <div className="flex gap-8" variants={fadeInUp}>
@@ -73,13 +73,13 @@ export default function ProfilePortofolio() {
             <FiArrowRight className="text-black" />
           </motion.span>
           <motion.h1
-            className="font-bold text-xl"
+            className="font-bold text-base md:text-lg lg:text-xl"
             variants={combined}
           >
             About Me
           </motion.h1>
         </div>
-        <p className="w-full ml-6 max-w-[10rem] text-gray-500">{selected.about}</p>
+        <p className="w-fit ml-6 text-xs md:text-sm lg:text-base  text-gray-500">{selected.about}</p>
       </motion.a>
       </motion.div>
 
@@ -101,30 +101,30 @@ export default function ProfilePortofolio() {
             <FiArrowRight className="text-black" />
           </motion.span>
           <motion.h1
-            className="font-bold text-xl"
+            className="font-bold text-base md:text-lg lg:text-xl"
             variants={hoverAnim}
           >
             Contact Me
           </motion.h1>
         </div>
-        <h2 className="w-full ml-6 max-w-[10rem] text-gray-500">{selected.mail}</h2>
+        <h2 className="w-fit ml-6 text-xs md:text-sm lg:text-base text-gray-500">{selected.mail}</h2>
       </motion.a>
       </motion.div>
     </div>
       </div>
 
       {/* Content */}
-      <div className="grid grid-cols-3 w-full h-[78vh] overflow-hidden">
+      <div className="px-5 md:px-10 lg:px-20 flex flex-col-reverse lg:flex-row w-full h-fit overflow-hidden">
         {/* Left */}
         <motion.div
-          className="col-span-2 px-16 h-[75%]"
+          className="w-full lg:w-2/3 px-4 md:px-10 lg:px-16 py-10"
           variants={fadeInUp}
           custom={6}
         >
-          <div className="flex flex-col justify-between h-full">
-            <motion.div className="space-y-4" variants={fadeInUp} custom={7}>
+          <div className="flex flex-col justify-between h-fit gap-4 md:gap-8 lg:gap-10">
+            <motion.div className="flex flex-col space-y-4" variants={fadeInUp} custom={7}>
               <motion.h1
-                className="text-6xl font-light"
+                className="text-2xl md:text-4xl lg:text-6xl font-light"
                 variants={fadeInUp}
                 custom={8}
               >
@@ -136,22 +136,22 @@ export default function ProfilePortofolio() {
                 variants={fadeInUp}
                 custom={9}
               >
-                <span className="inline-block h-[.5px] w-36 bg-black"></span>
-                <h1 className="flex items-center gap-4 text-[1.4rem] font-normal">
+                <span className="md:inline-block h-[.5px] w-36 bg-black hidden"></span>
+                <h1 className="flex items-center gap-4 text-base md:text-lg lg:text-xl font-normal">
                   {selected.role} <PiSparkleFill />
                 </h1>
               </motion.div>
             </motion.div>
 
             <motion.p
-              className="text-2xl w-full max-w-2/3"
+              className="text-lg md:text-xl lg:text-2xl w-full max-w-2/3"
               variants={fadeInUp}
               custom={10}
             >
               {selected.quotes}
             </motion.p>
 
-            <motion.div className="text-xl" variants={fadeInUp} custom={11}>
+            <motion.div className="text-base md:text-lg lg:text-xl" variants={fadeInUp} custom={11}>
               <h1 className="flex items-center gap-4">
                 <IoMdCheckmark /> Kode yang bersih dan efisien
               </h1>
@@ -164,13 +164,13 @@ export default function ProfilePortofolio() {
             </motion.div>
 
             <motion.div
-              className="flex items-center text-xl w-full max-w-[40%] justify-between"
+              className="flex items-center text-xl w-full justify-start gap-4"
               variants={fadeInUp}
               custom={12}
             >
               <motion.a
                 href=""
-                className="bg-black px-4 py-2 text-white w-fit rounded-full border border-black hover:bg-transparent hover:text-black transition"
+                className="bg-black px-4 py-2 text-xs md:text-sm lg:text-base text-white w-fit rounded-full border border-black hover:bg-transparent hover:text-black transition"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -180,7 +180,7 @@ export default function ProfilePortofolio() {
               <motion.a
                 download="cv-ibnu.pdf"
                 href={selected.cv}
-                className="flex gap-2 items-center border-b-2 pb-2"
+                className="flex gap-2 text-xs md:text-sm lg:text-base items-center border-b-2 pb-2"
                 whileHover={{ x: 5 }}
               >
                 Download CV <FaArrowDownLong className="pt-1" />
@@ -191,17 +191,17 @@ export default function ProfilePortofolio() {
 
         {/* Right */}
         <motion.div
-          className="col-span-1 flex justify-start -ml-28 items-center h-[80%]"
+          className="w-full lg:w-1/3 flex flex-row justify-center lg:justify-start items-center h-fit"
           variants={fadeInUp}
           custom={13}
         >
-          <div className="relative mb-[40rem] w-[31vw] h-auto">
+          <div className="relative w-fit h-auto">
             <AnimatePresence mode="popLayout">
                 <motion.img
                 key={selected.id} // penting biar setiap foto dianggap elemen baru
                 src={selected.photo}
                 alt={selected.name}
-                className="absolute top-0 left-0 w-full h-auto"
+                className="w-full max-w-sm h-auto"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -210,7 +210,7 @@ export default function ProfilePortofolio() {
             </AnimatePresence>
         </div>
 
-          <div className="flex absolute right-16 top-[20%] flex-col gap-2">
+          <div className="flex flex-col gap-2">
             {team.map((person, i) => (
               <motion.img
                 key={person.id}
@@ -232,7 +232,7 @@ export default function ProfilePortofolio() {
 
       {/* Bottom black bar */}
       <motion.div
-        className="bg-black font-semibold uppercase text-2xl flex justify-between px-20 items-center h-20"
+        className="w-full overflow-hidden whitespace-nowrap bg-black font-semibold uppercase text-lg md:text-xl lg:text-2xl flex justify-between px-4 md:px-10 lg:px-20 items-center h-20"
         variants={fadeInUp}
         custom={10}
       >
