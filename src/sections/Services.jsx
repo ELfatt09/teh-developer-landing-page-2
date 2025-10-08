@@ -1,6 +1,7 @@
 import SectionWrapper from '../partials/SectionWrapper';
 import designicon from './../assets/service-icons/Design.svg';
 import detail from "../assets/svg/detail.svg"
+import { servicesData } from '../data/services';
 
 
 function Services() {
@@ -9,7 +10,7 @@ function Services() {
           <div className='w-full flex flex-row justify-between items-center'>
             <h2 className='text-3xl md:text-4xl lg:text-6xl tracking-[-3%] leading-tight max-w-2/3'>Kami Menyediakan
               <br />
-            <span className='font-bold italic text-secondary'>
+            <span className='font-bold italic text-primary'>
                Layanan
           </span> Dalam
               </h2>
@@ -18,11 +19,15 @@ function Services() {
               </a>
           </div>
           <div className='w-full flex flex-wrap gap-6 justify-center '>
-              <ServiceCard title='UI/UX Design' description='Desain website atau aplikasi yang menarik dan memukau pengguna.' icon={designicon} />
-              <ServiceCard title='UI/UX Design' description='Desain website atau aplikasi yang menarik dan memukau pengguna.' icon={designicon} />
-              <ServiceCard title='UI/UX Design' description='Desain website atau aplikasi yang menarik dan memukau pengguna.' icon={designicon} />
-              <ServiceCard title='UI/UX Design' description='Desain website atau aplikasi yang menarik dan memukau pengguna.' icon={designicon} />
-            </div>
+              {servicesData.map((service, index) => (
+                  <ServiceCard 
+                      key={index}
+                        title={service.title}
+                        description={service.description}
+                        icon={service.icon}
+                  />
+              ))}
+              </div>
       </SectionWrapper>
   )
 }

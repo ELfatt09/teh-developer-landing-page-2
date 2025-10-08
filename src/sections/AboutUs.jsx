@@ -21,7 +21,7 @@ return (
             <h2 className='text-3xl md:text-6xl'>
                 Kami Adalah Solusi Digital
                 yang
-                <span className='text-secondary font-bold italic'> Hangat & Profesional</span>
+                <span className='text-primary font-bold italic'> Hangat & Profesional</span>
             </h2>
             <div className='w-full flex flex-row space-x-5'>
                 <p className='w-full text-base md:text-xl text-black/50'>

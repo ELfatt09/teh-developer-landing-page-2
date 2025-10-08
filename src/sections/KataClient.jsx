@@ -1,6 +1,7 @@
 import React from "react"
 import fotodummy from '../assets/foto-kasual/sevalino.png'
 import SectionWrapper from "../partials/SectionWrapper"
+import { testimonialsData } from "../data/testimonials"
 
 function KataKlien() {
     return (
@@ -15,18 +16,16 @@ function KataKlien() {
             </div>
 
             <div className="flex flex-wrap justify-center gap-8">
-                <KataCard 
-                    word={"Kami sebelumnya bingung mau mulai dari mana. Setelah bekerja sama dengan Teh Developer, website toko online kami jadi lebih cepat, cantik, dan mudah diakses. Penjualan naik 40% dalam 2 bulan!"}
-                    photo={fotodummy}
-                    name={"Sevalino"}
-                    about={'Penganngguran kelas atas'}
-                />
-                <KataCard 
-                    word={"Kami sebelumnya bingung mau mulai dari mana. Setelah bekerja sama dengan Teh Developer, website toko online kami jadi lebih cepat, cantik, dan mudah diakses. Penjualan naik 40% dalam 2 bulan!"}
-                    photo={fotodummy}
-                    name={"Sevalino"}
-                    about={'Penganngguran kelas atas'}
-                />
+                {testimonialsData.map((testimonial, index) => (
+                    <KataCard 
+                        key={index}
+                        word={testimonial.testimonial}
+                        photo={testimonial.image}
+                        name={testimonial.name}
+                        about={testimonial.about}
+                    />
+                ))}
+                
             </div>
         </SectionWrapper>
     )
