@@ -191,17 +191,17 @@ export default function ProfilePortofolio() {
 
         {/* Right */}
         <motion.div
-          className="w-full lg:w-1/3 flex flex-row justify-center lg:justify-start items-center h-fit"
+          className="w-full lg:w-1/3 flex flex-row justify-center lg:justify-start items-end h-content gap-5 mb-10 lg:mb-0"
           variants={fadeInUp}
           custom={13}
         >
-          <div className="relative w-fit h-auto">
+          <div className="relative w-full max-w-sm h-fit">
             <AnimatePresence mode="popLayout">
                 <motion.img
                 key={selected.id} // penting biar setiap foto dianggap elemen baru
                 src={selected.photo}
                 alt={selected.name}
-                className="w-full max-w-sm h-auto"
+                className="w-full h-auto"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -210,7 +210,7 @@ export default function ProfilePortofolio() {
             </AnimatePresence>
         </div>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 h-full items-center justify-center">
             {team.map((person, i) => (
               <motion.img
                 key={person.id}
