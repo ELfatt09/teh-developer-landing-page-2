@@ -1,6 +1,6 @@
 import React from 'react'
 import arrow from '../assets/svg/arrow.svg'
-import Project from '../components/project'
+import Project from '../components/Project'
 import SectionWrapper from '../partials/SectionWrapper'
 import { projectsData } from '../data/projects'
 
