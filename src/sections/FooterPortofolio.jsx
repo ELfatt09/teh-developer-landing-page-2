@@ -11,7 +11,7 @@ export default function PortofolioFooter() {
 
   return (
     <footer className="w-full h-[15vh] font-jakarta flex justify-center items-center">
-      <div className="border-t w-[92%] py-4 text-sm flex justify-between">
+      <div className="border-t w-[92%] py-4 text-sm flex flex-wrap gap-4 justify-between">
         {/* Sosmed */}
         <div className="flex gap-8 items-center">
           {socials.map((s, i) => (
@@ -20,7 +20,7 @@ export default function PortofolioFooter() {
               href={s.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 relative text-gray-700"
+              className="flex text-xs md:text-sm lg:text-base items-center gap-2 relative text-gray-700"
             >
               <div>{s.icon}</div>
 
