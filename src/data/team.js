@@ -31,26 +31,7 @@ export const team = [
         mail: "sevalino@gmail.com",
         photo: Sevalino,
         menuPhoto: SevalinoMenu,
-         project: [
-            {
-              id: 1,
-              picture:IbnuProject1,
-              tag: ["Fullstack", "Laravel", "Solo Project"],
-              name:"TwiiAhh",
-              type:"Social Media Website",
-              description:'Sebuah website social media seperti social media pada umumnya yaitu website yang dia bisa ngescroll, chat, talipun, message, call, dan lain lain',
-              link:"Goggle.com"
-            },
-            {
-              id: 2,
-              picture:IbnuProject2,
-              tag: ["Fullstack", "Laravel", "Solo Project"],
-              name:"TwiiAhh",
-              type:"Social Media Website",
-              description:'Sebuah website social media seperti social media pada umumnya yaitu website yang dia bisa ngescroll, chat, talipun, message, call, dan lain lain',
-              link:"Goggle.com"
-            },
-        ]
+        
     },
     {
         id: 2,
@@ -121,9 +102,9 @@ export const team = [
     },
     {
         id: 4,
-        name: "Abidal Farzan",
-        role: "UI UX Designer & Marketing of Teh Developer",
-        quotes: "I am Abidal Farzan Rosyidi, I passionate about exploring the digital world. I am eager to enhance my knowledge in web development, UI/UX, and modern technologies. I aim to grow my skills and contribute to meaningful digital projects.",
+        name: "Gaza Fathya Akhdan",
+        role: "UI UX Designer & Frontend Developer",
+        quotes: "I am A Frontend Developer, I passionate about exploring the digital world. I am eager to enhance my knowledge in web development, UI/UX, and modern technologies. I aim to grow my skills and contribute to meaningful digital projects.",
         about: "Just make it flex and consistence",
         vision1: "Flexibility & Independence",
         vision2: "Enhance My Soft Skill",
