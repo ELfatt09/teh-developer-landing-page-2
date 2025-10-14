@@ -46,26 +46,6 @@ export const team = [
         photo: Ibnu,
         menuPhoto: IbnuMenu,
         cv: IbnuCV,
-        project: [
-            {
-              id: 1,
-              picture:IbnuProject1,
-              tag: ["Fullstack", "Laravel", "Solo Project"],
-              name:"TwiiAhh",
-              type:"Social Media Website",
-              description:'Sebuah website social media seperti social media pada umumnya yaitu website yang dia bisa ngescroll, chat, talipun, message, call, dan lain lain',
-              link:"Goggle.com"
-            },
-            {
-              id: 2,
-              picture:IbnuProject2,
-              tag: ["Fullstack", "Laravel", "Solo Project"],
-              name:"TwiiAhh",
-              type:"Social Media Website",
-              description:'Sebuah website social media seperti social media pada umumnya yaitu website yang dia bisa ngescroll, chat, talipun, message, call, dan lain lain',
-              link:"Goggle.com"
-            },
-        ]
     },
     {
         id: 3,
@@ -79,32 +59,12 @@ export const team = [
         mail: "zahir@gmail.com",
         photo: Zahir,
         menuPhoto: ZahirMenu,
-         project: [
-            {
-              id: 1,
-              picture:ZahirProject1,
-              tag: ["Fullstack", "Laravel", "Solo Project"],
-              name:"TwiiAhh",
-              type:"Social Media Website",
-              description:'Sebuah website social media seperti social media pada umumnya yaitu website yang dia bisa ngescroll, chat, talipun, message, call, dan lain lain',
-              link:"Goggle.com"
-            },
-            {
-              id: 2,
-              picture:ZahirProject2,
-              tag: ["Fullstack", "Laravel", "Solo Project"],
-              name:"Kalcer Shop",
-              type:"Social Media Website",
-              description:'Sebuah website social media seperti social media pada umumnya yaitu website yang dia bisa ngescroll, chat, talipun, message, call, dan lain lain',
-              link:"Goggle.com"
-            },
-        ]
     },
     {
         id: 4,
         name: "Gaza Fathya Akhdan",
         role: "UI UX Designer & Frontend Developer",
-        quotes: "I am A Frontend Developer, I passionate about exploring the digital world. I am eager to enhance my knowledge in web development, UI/UX, and modern technologies. I aim to grow my skills and contribute to meaningful digital projects.",
+        quotes: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.",
         about: "Just make it flex and consistence",
         vision1: "Flexibility & Independence",
         vision2: "Enhance My Soft Skill",
@@ -113,25 +73,6 @@ export const team = [
         photo: Farzan,
         menuPhoto: FarzanMenu,
         cv:FarzanCV,
-         project: [
-            {
-              id: 1,
-              picture:FarzanProject1,
-              tag: ["Fullstack", "Laravel", "Solo Project"],
-              name:"TwiiAhh",
-              type:"Social Media Website",
-              description:'Sebuah website social media seperti social media pada umumnya yaitu website yang dia bisa ngescroll, chat, talipun, message, call, dan lain lain',
-              link:"Goggle.com"
-            },
-            {
-              id: 2,
-              picture:FarzanProject2,
-              tag: ["Fullstack", "Laravel", "Solo Project"],
-              name:"TwiiAhh",
-              type:"Social Media Website",
-              description:'Sebuah website social media seperti social media pada umumnya yaitu website yang dia bisa ngescroll, chat, talipun, message, call, dan lain lain',
-              link:"Goggle.com"
-            },
-        ]
+
     },
 ]
