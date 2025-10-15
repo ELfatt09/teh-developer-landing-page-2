@@ -1,23 +1,11 @@
+import brin from "../assets/testimoni/brin.png";
+
 export const testimonialsData = [
     {
         id: 1,
-        image: "https://placehold.co/100x100",
-        name: "John Doe",
-        about: "CEO at ABC Company",
-        testimonial: "Teh Developer membantu kami membangun website yang profesional dan mudah digunakan. Sangat direkomendasikan!"
-    },
-    {
-        id: 2,
-        image: "https://placehold.co/100x100",
-        name: "Jane Smith",
-        about: "CTO at XYZ Corporation",
-        testimonial: "Teh Developer membantu kami membangun aplikasi mobile yang menarik dan fungsional. Sangat direkomendasikan!"
-    },
-    {
-        id: 3,
-        image: "https://placehold.co/100x100",
-        name: "Mark Johnson",
-        about: "CFO at LMN Industries",
-        testimonial: "Teh Developer membantu kami membangun solusi teknis yang kuat dan cepat. Sangat direkomendasikan!"
+        image: null,
+        name: "Marlina Pandin",
+        about: "Peneliti di Badan Riset dan Inovasi Negara",
+        testimonial: "Kami pernah menggunakan jasa tim ahli dari web developer  ini untuk mengembangkan web aplikasi. Yang bersangkutan sangat mengerti permintaan client dan  kerjanya cepat banget. Hasilnya: tampilannya keren dan ringan diakses. Selain itu, kami juga mendapat saran dan masukan tentang free hosting untuk menghemat biaya, jadi tidak ada lagi biaya tambahan utk hosting web. Kami sangat puas dengan hasilnya."
     },
 ];

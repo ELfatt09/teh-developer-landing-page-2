@@ -6,7 +6,7 @@ import { servicesData } from '../data/services';
 
 function Services() {
   return (
-    <SectionWrapper>
+    <SectionWrapper id="services">
           <div className='w-full flex flex-row justify-between items-center'>
             <h2 className='text-3xl md:text-4xl lg:text-6xl tracking-[-3%] leading-tight max-w-2/3'>Kami Menyediakan
               <br />

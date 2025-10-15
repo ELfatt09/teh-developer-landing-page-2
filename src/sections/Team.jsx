@@ -5,6 +5,7 @@ import farzan from "../assets/foto-kasual/farzan.png"
 import ibnu from "../assets/foto-kasual/ibnu.png" 
 import zahir from "../assets/foto-kasual/zahir.png" 
 import SectionWrapper from "../partials/SectionWrapper"
+import { team } from "../data/team"
 import { Link } from 'react-router-dom'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -38,7 +39,7 @@ function Team() {
   }
 
   return (
-    <SectionWrapper>
+    <SectionWrapper id="team">
       <h2 className='text-2xl md:text-4xl lg:text-5xl'>
         Tim Kecil Yang Penuh Dedikasi, Menciptakan Solusi Digital Dengan{" "}
         <span className='font-bold italic text-primary'>
@@ -73,38 +74,18 @@ function Team() {
           }}
           className="!px-5"
         >
-            <SwiperSlide>
-              <TeamCard 
-                name={"Sevalino Elfata"} 
-                role={"Founder & Project Manager"} 
-                photo={sevalino} 
-                slug={'sevalino-elfata'} 
+          
+          {team.map((member, index) => (
+              <SwiperSlide>
+              <TeamCard
+                name={member.name}
+                role={member.role}
+                photo={member.casualPhoto}
+                slug={member.slug}
               />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TeamCard 
-                name={"Ibnu Alif Muhadzdzib"} 
-                role={"Co-Founder & Fullstack developer"} 
-                photo={ibnu} 
-                slug={'ibnu-muhadzdzib'} 
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TeamCard 
-                name={"Gaza Fathya Akhdan"} 
-                role={"Designer & Frontend Developer"} 
-                photo={farzan} 
-                slug={'gaza-fathya-akhdan'} 
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TeamCard 
-                name={"Muhammad Zahir"} 
-                role={"UI UX Designer & Marketing"} 
-                photo={zahir} 
-                slug={'muhammad-zahir'} 
-              />
-          </SwiperSlide>
+              </SwiperSlide>
+            ))}
+              
         </Swiper>
       </div>
     </SectionWrapper>
@@ -123,9 +104,9 @@ function TeamCard({ name, role, photo, slug }) {
             <img src={detail} alt="" className="w-3 h-auto" />
           </Link>
         </div>
-        <div className='flex flex-row space-x-5 w-full'>
-          <h3 className='text-2xl font-bold w-2/3'>{name}</h3>
-          <p className='text-xs w-1/3'>{role}</p>
+        <div className='flex flex-col space-x-5 w-full'>
+          <h3 className='text-2xl font-bold w-full'>{name}</h3>
+          <p className='text-xs w-full'>{role}</p>
         </div>
       </div>
     </div>

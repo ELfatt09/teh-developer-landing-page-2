@@ -6,7 +6,7 @@ import { projectsData } from '../data/projects'
 
 function Projects() {
   return (
-    <SectionWrapper>
+    <SectionWrapper id="projects">
           <h2 className='text-3xl md:text-5xl lg:text-6xl tracking-[-3%]'>Project Terakhir <span className='font-bold italic text-primary'>
                Tim Teh Developer
           </span>

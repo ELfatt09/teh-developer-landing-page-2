@@ -1,4 +1,6 @@
 import React, { useRef } from "react"
+import aboutUs from '../assets/about-us.svg'
+
 import emailjs from "emailjs-com"
 import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -77,7 +79,7 @@ function Kontak() {
                 />
                 ))}
             </div>
-            <div className="w-full flex flex-col lg:flex-row">
+            <div className="w-full flex flex-col gap-10 lg:flex-row">
                 <div className="w-full max-w-4xl grid grid-cols-3">
                 <div className="col-span-3 space-y-8">
                     <div className="space-y-2">
@@ -152,15 +154,7 @@ function Kontak() {
                 </div>
             </div>
 
-    <ToastContainer 
-        position="bottom-center"
-        autoClose={5000}
-        hideProgressBar={false} 
-        newestOnTop={true}
-        closeOnClick
-        draggable
-        pauseOnHover
-      />
+                <img src={aboutUs} className=""></img>
             </div>
             
 

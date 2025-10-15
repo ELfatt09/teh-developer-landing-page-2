@@ -1,7 +1,9 @@
+import uiux from "../assets/service-icons/Design.svg"
+
 export const servicesData = [
     {
         id: 1,
-        icon: "https://placehold.co/100x100",
+        icon: uiux,
         title: "UI/UX Design",
         description: "Desain website atau aplikasi yang menarik dan memukau pengguna."
     },

@@ -4,7 +4,7 @@ import SectionWrapper from '../partials/SectionWrapper'
 
 function AboutUs() {
 return (
-    <SectionWrapper>
+    <SectionWrapper id="about">
         <div className='w-full flex flex-col lg:flex-row justify-between items-center space-x-10'>
         <div className='w-full max-w-md'>
             

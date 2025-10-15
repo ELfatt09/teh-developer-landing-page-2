@@ -1,4 +1,6 @@
 import React from 'react'
+import ScrollToHashElement from "@cascadia-code/scroll-to-hash-element";
+
 import Hero from '../sections/Hero'
 import Navbar from '../partials/Navbar'
 import AboutUs from '../sections/AboutUs'
@@ -11,7 +13,9 @@ import Footer from '../sections/Footer'
 
 function Home() {
   return (
-      <>
+    <>
+          <ScrollToHashElement />
+
         <Navbar />
         <Hero />
       <AboutUs />

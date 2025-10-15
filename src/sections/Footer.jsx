@@ -1,6 +1,7 @@
-import logo from '../assets/banner-logo.svg'
+import logo from '../assets/banner-logo.png'
 import textpict from '../assets/tehdevfooter.png'
 import SectionWrapper from '../partials/SectionWrapper'
+import { servicesData } from '../data/services'
 
 export default function Footer() {
     return (
@@ -40,19 +41,12 @@ export default function Footer() {
                         <div className='flex flex-wrap justify-between items-center  gap-8'>
                             <div>
                                 <h1 className='text-xl font-semibold mb-2'>Layanan</h1>
-                                <ul className='space-y-3'>
+                            <ul className='space-y-3'>
+                                {servicesData.map((service, index) => (
                                 <li className='text-tertiary'>
-                                    <h2>UI/UX Design</h2>
-                                </li>
-                                <li className='text-tertiary'>
-                                    <h2>UI/UX Design</h2>
-                                </li>
-                                <li className='text-tertiary'>
-                                    <h2>UI/UX Design</h2>
-                                </li>
-                                <li className='text-tertiary'>
-                                    <h2>UI/UX Design</h2>
-                                </li>
+                                        <h2>{ service.title }</h2>
+                                </li>                                ))}
+                            
                             </ul>
                             </div>
                             <div>

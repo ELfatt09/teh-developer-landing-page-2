@@ -22,10 +22,10 @@ function Navbar() {
       className={`sticky ${scroll ? "bg-white/80 top-5 shadow-lg" : "bg-white top-0 shadow-none"} backdrop-blur-lg items-center justify-between  py-3 px-20 mx-auto z-50 hidden lg:flex`}>
       <img src={bannerLogo} alt="The Developer's Hangout Logo" className="h-12" />
       <div className="space-x-8 flex flex-row w-fit justify-center">
-        <NavbarLinkButton href="#home" >Beranda</NavbarLinkButton>
-        <NavbarLinkButton href="#features" >Tentang Kami</NavbarLinkButton>
-        <NavbarLinkButton href="#pricing" >Layanan</NavbarLinkButton>
-        <NavbarLinkButton href="#keunggulan" >Keunggulan</NavbarLinkButton>
+        <NavbarLinkButton href="/#home" >Beranda</NavbarLinkButton>
+          <NavbarLinkButton href="/#about" >Tentang Kami</NavbarLinkButton>
+        <NavbarLinkButton href="/#services" >Layanan</NavbarLinkButton>
+        <NavbarLinkButton href="/#testimonials" >Testimoni</NavbarLinkButton>
         
         </div>
         <a href="#contact" className="w-fit px-6 py-2 bg-primary ease-in-out text-white rounded-lg font-semibold text-lg hover:bg-primary/70  shadow-none  transition-all duration-500">Kontak</a>
